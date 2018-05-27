@@ -11,11 +11,11 @@ before_script:
 
 script:
   - dotnet restore
-  - dotnet run --project AnsiCodes.CliTest /p:CiBuildId=$TRAVIS_BUILD_NUMBER
+  - dotnet run --project AnsiCodes.CliTest /p:CiBuildNumber=$TRAVIS_BUILD_NUMBER
 
 deploy: 
   skip_cleanup: true
   provider: script
-  script: dotnet pack AnsiCodes -c Release /p:CiBuildId=$TRAVIS_BUILD_NUMBER && dotnet nuget push AnsiCodes/bin/Release/AnsiCodes.*.nupkg -k $NUGET_API_KEY -s $NUGET_API
+  script: dotnet pack AnsiCodes -c Release /p:CiBuildNumber=$TRAVIS_BUILD_NUMBER && dotnet nuget push AnsiCodes/bin/Release/AnsiCodes.*.nupkg -k $NUGET_API_KEY -s $NUGET_API
   on:
     branch: master
