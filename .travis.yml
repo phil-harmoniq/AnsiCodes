@@ -16,6 +16,6 @@ script:
 deploy: 
   skip_cleanup: true
   provider: script
-  script: dotnet pack AnsiCodes -c release /p:CiBuildId=$TRAVIS_BUILD_NUMBER && dotnet nuget push AnsiCodes/bin/Release/AnsiCodes.*.nupkg k $NUGET_API_KEY -s $NUGET_API
+  script: dotnet pack AnsiCodes -c Release /p:CiBuildId=$TRAVIS_BUILD_NUMBER && dotnet nuget push AnsiCodes/bin/Release/AnsiCodes.*.nupkg k $NUGET_API_KEY -s $NUGET_API
   on:
     branch: master
