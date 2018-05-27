@@ -36,6 +36,9 @@ namespace AnsiCodes
         /// <summary> Reset hidden ANSI code (format strings with it) </summary>
         public static readonly string UnHidden = "\x1B[28m";
 
+        /// <summary> Reset all formatting ANSI codes (format strings with it) </summary>
+        public static readonly string Default = UnBold + UnDim + UnUnderline + UnInvert + UnHidden;
+
 
         /// <summary> Enable bold formatting without printing </summary>
         public static void SetBold() => Console.Write(Bold);

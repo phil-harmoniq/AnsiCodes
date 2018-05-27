@@ -58,7 +58,7 @@ namespace AnsiCodes
 
 
         /// <summary> Set foreground color to default without printing </summary>
-        public static void Rest() => Console.Write(Default);
+        public static void Reset() => Console.Write(Default);
 
         /// <summary> Set foreground color to black without printing </summary>
         public static void SetBlack() => Console.Write(Black);
