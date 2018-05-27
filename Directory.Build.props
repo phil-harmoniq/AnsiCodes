@@ -1,0 +1,20 @@
+<Project>
+ 
+  <PropertyGroup>
+    <Authors>Phil Hawkins</Authors>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://phil-harmoniq.github.io/AnsiCodes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/phil-harmoniq/AnsiCodes</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/phil-harmoniq/AnsiCodes/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CiBuildNumber></CiBuildNumber>
+    <VersionSuffix Condition=" '$(CiBuildNumber)' != '' And '$(VersionSuffix)' != '' ">$(VersionSuffix)-ci$(CiBuildNumber)</VersionSuffix>
+  </PropertyGroup>
+
+</Project>

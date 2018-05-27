@@ -1,0 +1,21 @@
+dist: trusty
+language: csharp
+mono: none
+dotnet: 2.1.300-rc1-008673
+
+env:
+- NUGET_API=https://api.nuget.org/v3/index.json
+
+before_script:
+  - ls -lhaF
+
+script:
+  - dotnet restore
+  - dotnet run --project AnsiCodes.CliTest /p:CiBuildId=$TRAVIS_BUILD_NUMBER
+
+deploy: 
+  skip_cleanup: true
+  provider: script
+  script: dotnet pack AnsiCodes -c release /p:CiBuildId=$TRAVIS_BUILD_NUMBER && dotnet nuget push AnsiCodes/bin/Release/AnsiCodes.*.nupkg k $NUGET_API_KEY -s $NUGET_API
+  on:
+    branch: master

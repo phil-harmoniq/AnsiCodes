@@ -1,0 +1,18 @@
+{
+	"gitlens.codeLens.enabled": true,
+	"gitlens.gitExplorer.enabled": false,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/bin": true,
+		"**/obj": true,
+		"**/*.userprefs": true,
+		"**/.vs": true,
+		"**/.idea": true,
+		"**/.nupkg": true
+	},
+	"dotnet-test-explorer.testProjectPath": "CliBuilder.Tests"
+}

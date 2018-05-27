@@ -215,3 +215,18 @@ FakesAssemblies/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
+
+# Experimental AppImages
+*.AppImage
+
+# API examples folder
+GovLib.TestData/
+
+# Mac finder config
+*.DS_Store
+
+# JetBrains Rider config
+.idea/
+
+# Coverage Results
+coverage.json
