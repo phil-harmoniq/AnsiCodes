@@ -8,7 +8,7 @@
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "Build Solution",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/AnsiCodes.CliTest/bin/Debug/netcoreapp2.1/AnsiCodes.CliTest.dll",
             "args": [],
