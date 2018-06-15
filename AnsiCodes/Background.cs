@@ -6,55 +6,55 @@ namespace AnsiCodes
     public class Background
     {
         /// <summary> Default background ANSI code (format strings with it) </summary>
-        public const string Default = "\x1B[49m";
+        public static readonly AnsiCode Default = new AnsiCode("\x1B[49m");
 
         /// <summary> Black background ANSI code (format strings with it) </summary>
-        public const string Black = "\x1B[40m";
+        public static readonly AnsiCode Black = new AnsiCode("\x1B[40m");
 
         /// <summary> White background ANSI code (format strings with it) </summary>
-        public const string White = "\x1B[107m";
+        public static readonly AnsiCode White = new AnsiCode("\x1B[107m");
 
         /// <summary> Red background ANSI code (format strings with it) </summary>
-        public const string Red = "\x1B[41m";
+        public static readonly AnsiCode Red = new AnsiCode("\x1B[41m");
 
         /// <summary> Green background ANSI code (format strings with it) </summary>
-        public const string Green = "\x1B[42m";
+        public static readonly AnsiCode Green = new AnsiCode("\x1B[42m");
 
         /// <summary> Yellow background ANSI code (format strings with it) </summary>
-        public const string Yellow = "\x1B[43m";
+        public static readonly AnsiCode Yellow = new AnsiCode("\x1B[43m");
 
         /// <summary> Blue background ANSI code (format strings with it) </summary>
-        public const string Blue = "\x1B[44m";
+        public static readonly AnsiCode Blue = new AnsiCode("\x1B[44m");
 
         /// <summary> Magenta background ANSI code (format strings with it) </summary>
-        public const string Magenta = "\x1B[45m";
+        public static readonly AnsiCode Magenta = new AnsiCode("\x1B[45m");
 
         /// <summary> Cyan background ANSI code (format strings with it) </summary>
-        public const string Cyan = "\x1B[46m";
+        public static readonly AnsiCode Cyan = new AnsiCode("\x1B[46m");
 
         /// <summary> Light gray background ANSI code (format strings with it) </summary>
-        public const string LtGray = "\x1B[47m";
+        public static readonly AnsiCode LtGray = new AnsiCode("\x1B[47m");
 
         /// <summary> Dark gray background ANSI code (format strings with it) </summary>
-        public const string DrkGray = "\x1B[100m";
+        public static readonly AnsiCode DrkGray = new AnsiCode("\x1B[100m");
 
         /// <summary> Light red background ANSI code (format strings with it) </summary>
-        public const string LtRed = "\x1B[91m";
+        public static readonly AnsiCode LtRed = new AnsiCode("\x1B[91m");
 
         /// <summary> Light green background ANSI code (format strings with it) </summary>
-        public const string LtGreen = "\x1B[102m";
+        public static readonly AnsiCode LtGreen = new AnsiCode("\x1B[102m");
 
         /// <summary> Light yellow background ANSI code (format strings with it) </summary>
-        public const string LtYellow = "\x1B[103m";
+        public static readonly AnsiCode LtYellow = new AnsiCode("\x1B[103m");
 
         /// <summary> Light blue background ANSI code (format strings with it) </summary>
-        public const string LtBlue = "\x1B[104m";
+        public static readonly AnsiCode LtBlue = new AnsiCode("\x1B[104m");
 
         /// <summary> Light magenta background ANSI code (format strings with it) </summary>
-        public const string LtMagenta = "\x1B[105m";
+        public static readonly AnsiCode LtMagenta = new AnsiCode("\x1B[105m");
 
         /// <summary> Light cyan background ANSI code (format strings with it) </summary>
-        public const string LtCyan = "\x1B[106m";
+        public static readonly AnsiCode LtCyan = new AnsiCode("\x1B[106m");
 
 
         /// <summary> Set background color to default without printing </summary>

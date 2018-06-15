@@ -6,38 +6,38 @@ namespace AnsiCodes
     public class Format
     {
         /// <summary> Bold ANSI code (format strings with it) </summary>
-        public static readonly string Bold = "\x1B[1m";
+        public static readonly AnsiCode Bold = new AnsiCode("\x1B[1m");
 
         /// <summary> Dim ANSI code (format strings with it) </summary>
-        public static readonly string Dim = "\x1B[2m";
+        public static readonly AnsiCode Dim = new AnsiCode("\x1B[2m");
 
         /// <summary> Underline ANSI code (format strings with it) </summary>
-        public static readonly string Underline = "\x1B[4m";
+        public static readonly AnsiCode Underline = new AnsiCode("\x1B[4m");
 
         /// <summary> Invert ANSI code (format strings with it) </summary>
-        public static readonly string Invert = "\x1B[7m";
+        public static readonly AnsiCode Invert = new AnsiCode("\x1B[7m");
 
         /// <summary> Hidden ANSI code (format strings with it) </summary>
-        public static readonly string Hidden = "\x1B[8m";
+        public static readonly AnsiCode Hidden = new AnsiCode("\x1B[8m");
 
 
         /// <summary> Reset bold ANSI code (format strings with it) </summary>
-        public static readonly string UnBold = "\x1B[21m";
+        public static readonly AnsiCode UnBold = new AnsiCode("\x1B[21m");
 
         /// <summary> Reset dim ANSI code (format strings with it) </summary>
-        public static readonly string UnDim = "\x1B[22m";
+        public static readonly AnsiCode UnDim = new AnsiCode("\x1B[22m");
 
         /// <summary> Reset underline ANSI code (format strings with it) </summary>
-        public static readonly string UnUnderline = "\x1B[24m";
+        public static readonly AnsiCode UnUnderline = new AnsiCode("\x1B[24m");
 
         /// <summary> Reset invert ANSI code (format strings with it) </summary>
-        public static readonly string UnInvert = "\x1B[27m";
+        public static readonly AnsiCode UnInvert = new AnsiCode("\x1B[27m");
 
         /// <summary> Reset hidden ANSI code (format strings with it) </summary>
-        public static readonly string UnHidden = "\x1B[28m";
+        public static readonly AnsiCode UnHidden = new AnsiCode("\x1B[28m");
 
         /// <summary> Reset all formatting ANSI codes (format strings with it) </summary>
-        public static readonly string Default = UnBold + UnDim + UnUnderline + UnInvert + UnHidden;
+        public static readonly AnsiCode Default = new AnsiCode($"{UnBold}{UnDim}{UnUnderline}{UnInvert}{UnHidden}");
 
 
         /// <summary> Enable bold formatting without printing </summary>
@@ -72,6 +72,6 @@ namespace AnsiCodes
         public static void UnsetHidden() => Console.Write(UnHidden);
 
         /// <summary> Disable all formatting without printing </summary>
-        public static void Reset() => Console.Write(UnBold + UnDim + UnUnderline + UnInvert + UnHidden);
+        public static void Reset() => Console.Write($"{UnBold}{UnDim}{UnUnderline}{UnInvert}{UnHidden}");
     }
 }
