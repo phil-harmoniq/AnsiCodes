@@ -5,6 +5,7 @@ namespace AnsiCodes
 {
     /// <summary>
     /// This hack enables ANSI codes in modern Windows terminals.
+    /// Original author: https://www.jerriepelser.com/blog/using-ansi-color-codes-in-net-console-apps/
     /// TODO: Add extra checks to determine if using a modern version of Windows and an ANSI-compatible windows console
     /// </summary>
     internal static class WindowsHelper
@@ -27,27 +28,26 @@ namespace AnsiCodes
 
         internal static bool IsWindows => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
         internal static bool AnsiEnabled { get; private set; } = false;
-        internal static bool AnsiEnableAttempted { get; private set; } = false;
 
-        internal static bool Enable()
+        static WindowsHelper()
         {
-            var iStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-
-            if (!GetConsoleMode(iStdOut, out uint outConsoleMode))
+            if (IsWindows)
             {
-                Console.WriteLine("failed to get output console mode");
-                return false;
-            }
+                var iStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 
-            outConsoleMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN;
-            if (!SetConsoleMode(iStdOut, outConsoleMode))
-            {
-                Console.WriteLine($"failed to set output console mode, error code: {GetLastError()}");
-                return false;
-            }
+                if (!GetConsoleMode(iStdOut, out uint outConsoleMode))
+                {
+                    Console.WriteLine("failed to get output console mode");
+                }
 
-            AnsiEnabled = true;
-            return true;
+                outConsoleMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN;
+                if (!SetConsoleMode(iStdOut, outConsoleMode))
+                {
+                    Console.WriteLine($"failed to set output console mode, error code: {GetLastError()}");
+                }
+
+                AnsiEnabled = true;
+            }
         }
     }
 }

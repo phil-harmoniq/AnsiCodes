@@ -8,21 +8,7 @@ namespace AnsiCodes
         private string _code;
         internal AnsiCode(string code)
         {
-            if (WindowsHelper.IsWindows)
-            {
-                if (WindowsHelper.AnsiEnabled)
-                {
-                    _code = code;
-                }
-                else if (!WindowsHelper.AnsiEnableAttempted)
-                {
-                    if (WindowsHelper.Enable())
-                    {
-                        _code = code;
-                    }
-                }
-            }
-            else
+            if (!WindowsHelper.IsWindows || WindowsHelper.IsWindows && WindowsHelper.AnsiEnabled)
             {
                 _code = code;
             }
