@@ -4,6 +4,8 @@
 
 ### (This library is the spritual successor to [ConsoleColors](https://github.com/phil-harmoniq/ConsoleColors))
 
+The new experimental build supports *modern* Windows (8+)
+
 <img src="http://i.imgur.com/fzoBQsG.png" width="287px" height="287px">
 
 ## Usage

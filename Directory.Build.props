@@ -2,7 +2,7 @@
  
   <PropertyGroup>
     <Authors>Phil Hawkins</Authors>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
     <VersionSuffix>alpha</VersionSuffix>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl>https://phil-harmoniq.github.io/AnsiCodes</PackageProjectUrl>
@@ -12,6 +12,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <!-- CI version tagging build config -->
   <PropertyGroup>
     <CiBuildNumber></CiBuildNumber>
     <VersionSuffix Condition=" '$(CiBuildNumber)' != '' And '$(VersionSuffix)' != '' ">$(VersionSuffix)-ci$(CiBuildNumber)</VersionSuffix>
