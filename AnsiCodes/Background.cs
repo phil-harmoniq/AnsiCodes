@@ -3,7 +3,7 @@ using System;
 namespace AnsiCodes
 {
     /// <summary> Container class for all available foreground colors </summary>
-    public class Background
+    public sealed class Background
     {
         /// <summary> Default background ANSI code (format strings with it) </summary>
         public static readonly AnsiCode Default = new AnsiCode("\x1B[49m");

@@ -58,54 +58,54 @@ namespace AnsiCodes
 
 
         /// <summary> Set foreground color to default without printing </summary>
-        public static void Reset() => Console.Write(Default.Code);
+        public static void Reset() => Console.Write(Default);
 
         /// <summary> Set foreground color to black without printing </summary>
-        public static void SetBlack() => Console.Write(Black.Code);
+        public static void SetBlack() => Console.Write(Black);
 
         /// <summary> Set foreground color to white without printing </summary>
-        public static void SetWhite() => Console.Write(White.Code);
+        public static void SetWhite() => Console.Write(White);
 
         /// <summary> Set foreground color to red without printing </summary>
-        public static void SetRed() => Console.Write(Red.Code);
+        public static void SetRed() => Console.Write(Red);
 
         /// <summary> Set foreground color to green without printing </summary>
-        public static void SetGreen() => Console.Write(Green.Code);
+        public static void SetGreen() => Console.Write(Green);
 
         /// <summary> Set foreground color to yellow without printing </summary>
-        public static void SetYellow() => Console.Write(Yellow.Code);
+        public static void SetYellow() => Console.Write(Yellow);
 
         /// <summary> Set foreground color to blue without printing </summary>
-        public static void SetBlue() => Console.Write(Blue.Code);
+        public static void SetBlue() => Console.Write(Blue);
 
         /// <summary> Set foreground color to magenta without printing </summary>
-        public static void SetMagenta() => Console.Write(Magenta.Code);
+        public static void SetMagenta() => Console.Write(Magenta);
 
         /// <summary> Set foreground color to cyan without printing </summary>
-        public static void SetCyan() => Console.Write(Cyan.Code);
+        public static void SetCyan() => Console.Write(Cyan);
 
         /// <summary> Set foreground color to light gray without printing </summary>
-        public static void SetLtGray() => Console.Write(LtGray.Code);
+        public static void SetLtGray() => Console.Write(LtGray);
 
         /// <summary> Set foreground color to dark gray without printing </summary>
-        public static void SetDrkGray() => Console.Write(DrkGray.Code);
+        public static void SetDrkGray() => Console.Write(DrkGray);
 
         /// <summary> Set foreground color to light red without printing </summary>
-        public static void SetLtRed() => Console.Write(LtRed.Code);
+        public static void SetLtRed() => Console.Write(LtRed);
 
         /// <summary> Set foreground color to light green without printing </summary>
-        public static void SetLtGreen() => Console.Write(LtGreen.Code);
+        public static void SetLtGreen() => Console.Write(LtGreen);
 
         /// <summary> Set foreground color to light yellow without printing </summary>
-        public static void SetLtYellow() => Console.Write(LtYellow.Code);
+        public static void SetLtYellow() => Console.Write(LtYellow);
 
         /// <summary> Set foreground color to light blue without printing </summary>
-        public static void SetLtBlue() => Console.Write(LtBlue.Code);
+        public static void SetLtBlue() => Console.Write(LtBlue);
 
         /// <summary> Set foreground color to light magenta without printing </summary>
-        public static void SetLtMagenta() => Console.Write(LtMagenta.Code);
+        public static void SetLtMagenta() => Console.Write(LtMagenta);
 
         /// <summary> Set foreground color to light cyan without printing </summary>
-        public static void SetLtCyan() => Console.Write(LtCyan.Code);
+        public static void SetLtCyan() => Console.Write(LtCyan);
     }
 }

@@ -3,7 +3,7 @@ using System;
 namespace AnsiCodes
 {
     /// <summary> Container class for all available formatting options </summary>
-    public class Format
+    public sealed class Format
     {
         /// <summary> Bold ANSI code (format strings with it) </summary>
         public static readonly AnsiCode Bold = new AnsiCode("\x1B[1m");
