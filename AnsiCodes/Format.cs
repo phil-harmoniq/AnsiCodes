@@ -17,7 +17,7 @@ namespace AnsiCodes
         /// <summary> Invert ANSI code (format strings with it) </summary>
         public static readonly AnsiCode Invert = new AnsiCode("\x1B[7m");
 
-        /// <summary> Hidden ANSI code (format strings with it) </summary>
+        /// <summary> Hidden ANSI code (format strings with it) - DO NOT USE FOR SECURITY </summary>
         public static readonly AnsiCode Hidden = new AnsiCode("\x1B[8m");
 
 
@@ -34,7 +34,7 @@ namespace AnsiCodes
         /// <summary> Reset invert ANSI code (format strings with it) </summary>
         public static readonly AnsiCode UnInvert = new AnsiCode("\x1B[27m");
 
-        /// <summary> Reset hidden ANSI code (format strings with it) </summary>
+        /// <summary> Reset hidden ANSI code (format strings with it) - DO NOT USE FOR SECURITY </summary>
         public static readonly AnsiCode UnHidden = new AnsiCode("\x1B[28m");
 
         /// <summary> Reset all formatting ANSI codes (format strings with it) </summary>

@@ -39,7 +39,7 @@ namespace AnsiCodes
         public static readonly AnsiCode DrkGray = new AnsiCode("\x1B[100m");
 
         /// <summary> Light red background ANSI code (format strings with it) </summary>
-        public static readonly AnsiCode LtRed = new AnsiCode("\x1B[91m");
+        public static readonly AnsiCode LtRed = new AnsiCode("\x1B[101m");
 
         /// <summary> Light green background ANSI code (format strings with it) </summary>
         public static readonly AnsiCode LtGreen = new AnsiCode("\x1B[102m");
