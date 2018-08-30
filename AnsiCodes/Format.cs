@@ -22,7 +22,7 @@ namespace AnsiCodes
 
 
         /// <summary> Reset bold ANSI code (format strings with it) </summary>
-        [Obsolete("This ANSI code doesn't seem to work properly. More research needed.")]
+        [Obsolete("This ANSI code doesn't seem to work properly. Use Format.Default instead.")]
         public static readonly AnsiCode UnBold = new AnsiCode("\x1B[21m");
 
         /// <summary> Reset dim ANSI code (format strings with it) </summary>

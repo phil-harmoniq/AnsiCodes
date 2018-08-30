@@ -2,14 +2,15 @@
  
   <PropertyGroup>
     <Authors>Phil Hawkins</Authors>
-    <VersionPrefix>0.2.0</VersionPrefix>
-    <VersionSuffix>alpha</VersionSuffix>
+    <VersionPrefix>0.2.1</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl>https://phil-harmoniq.github.io/AnsiCodes</PackageProjectUrl>
     <RepositoryUrl>https://github.com/phil-harmoniq/AnsiCodes</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/phil-harmoniq/AnsiCodes/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageIconUrl></PackageIconUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>ansi;color;format;terminal;console</PackageTags>
   </PropertyGroup>
 
   <!-- CI version tagging build config -->
