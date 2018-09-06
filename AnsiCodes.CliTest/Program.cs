@@ -36,6 +36,7 @@ namespace AnsiCodes.CliTest
         {
             Console.WriteLine("Inline foreground color codes:");
             Console.WriteLine($"{Color.Default}- Default{Color.Default}");
+            Console.WriteLine($"{Color.White}- White{Color.Default}");
             Console.WriteLine($"{Color.Black}- Black{Color.Default}");
             Console.WriteLine($"{Color.Blue}- Blue{Color.Default}");
             Console.WriteLine($"{Color.Cyan}- Cyan{Color.Default}");
@@ -50,7 +51,6 @@ namespace AnsiCodes.CliTest
             Console.WriteLine($"{Color.LtYellow}- LtYellow{Color.Default}");
             Console.WriteLine($"{Color.Magenta}- Magenta{Color.Default}");
             Console.WriteLine($"{Color.Red}- Red{Color.Default}");
-            Console.WriteLine($"{Color.White}- White{Color.Default}");
             Console.WriteLine($"{Color.Yellow}- Yellow{Color.Default}");
             Console.WriteLine();
         }
@@ -59,6 +59,7 @@ namespace AnsiCodes.CliTest
         {
             Console.WriteLine("Inline background color codes:");
             Console.WriteLine($"{Background.Default}- Default{Background.Default}");
+            Console.WriteLine($"{Background.White}- White{Background.Default}");
             Console.WriteLine($"{Background.Black}- Black{Background.Default}");
             Console.WriteLine($"{Background.Blue}- Blue{Background.Default}");
             Console.WriteLine($"{Background.Cyan}- Cyan{Background.Default}");
@@ -73,7 +74,6 @@ namespace AnsiCodes.CliTest
             Console.WriteLine($"{Background.LtYellow}- LtYellow{Background.Default}");
             Console.WriteLine($"{Background.Magenta}- Magenta{Background.Default}");
             Console.WriteLine($"{Background.Red}- Red{Background.Default}");
-            Console.WriteLine($"{Background.White}- White{Background.Default}");
             Console.WriteLine($"{Background.Yellow}- Yellow{Background.Default}");
             Console.WriteLine();
         }
