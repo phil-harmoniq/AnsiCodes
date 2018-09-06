@@ -83,7 +83,7 @@ namespace AnsiCodes.CliTest
             Console.WriteLine("Inline format codes:");
             Console.WriteLine($"{Format.Default}- Default{Format.Default}");
             Console.WriteLine($"{Format.Underline}- Underline{Format.UnUnderline}");
-            Console.WriteLine($"{Format.Bold}- Bold{Format.UnBold}. This is stillBold?!{Format.Default}");
+            Console.WriteLine($"{Format.Bold}- Bold{Format.UnBold}. This is still Bold?!{Format.Default}");
             Console.WriteLine($"{Format.Dim}- Dim{Format.UnDim}");
             Console.WriteLine($"{Format.Hidden}- Hidden{Format.UnHidden}");
             Console.WriteLine($"{Format.Invert}- Invert{Format.UnInvert}");
