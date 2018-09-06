@@ -35,6 +35,7 @@ namespace AnsiCodes.CliTest
         static void InlineForegroundColorCodes()
         {
             Console.WriteLine("Inline foreground color codes:");
+            Console.WriteLine($"{Color.Default}- Default{Color.Default}");
             Console.WriteLine($"{Color.Black}- Black{Color.Default}");
             Console.WriteLine($"{Color.Blue}- Blue{Color.Default}");
             Console.WriteLine($"{Color.Cyan}- Cyan{Color.Default}");
@@ -57,6 +58,7 @@ namespace AnsiCodes.CliTest
         static void InlineBackgroundColorCodes()
         {
             Console.WriteLine("Inline background color codes:");
+            Console.WriteLine($"{Background.Default}- Default{Background.Default}");
             Console.WriteLine($"{Background.Black}- Black{Background.Default}");
             Console.WriteLine($"{Background.Blue}- Blue{Background.Default}");
             Console.WriteLine($"{Background.Cyan}- Cyan{Background.Default}");
@@ -79,8 +81,9 @@ namespace AnsiCodes.CliTest
         static void InlineFormatCodes()
         {
             Console.WriteLine("Inline format codes:");
-            Console.WriteLine($"{Format.Underline}- Invert{Format.UnUnderline}");
-            Console.WriteLine($"{Format.Bold}- Bold{Format.UnBold} This is underlined?!{Format.Default}");
+            Console.WriteLine($"{Format.Default}- Default{Format.Default}");
+            Console.WriteLine($"{Format.Underline}- Underline{Format.UnUnderline}");
+            Console.WriteLine($"{Format.Bold}- Bold{Format.UnBold}. This is stillBold?!{Format.Default}");
             Console.WriteLine($"{Format.Dim}- Dim{Format.UnDim}");
             Console.WriteLine($"{Format.Hidden}- Hidden{Format.UnHidden}");
             Console.WriteLine($"{Format.Invert}- Invert{Format.UnInvert}");
@@ -99,7 +102,7 @@ namespace AnsiCodes.CliTest
                     + $"{Color.Red}d"
                     + $"{Color.Yellow}e"
                     + $"{Color.Green}s"
-                    + $"{Color.White} {_version}"
+                    + $"{Color.Default} {_version}"
                     + $"{Reset.All}"
             );
         }
